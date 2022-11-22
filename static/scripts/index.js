@@ -6,7 +6,7 @@ function getData() {
         document.getElementById("receivedData").innerHTML =this.responseText;
         }
     };
-    xhttp.open("GET", "https://AyuSharma-dev.github.io/ThanksGiving/index.json", true);
+    xhttp.open("GET", "https://AyuSharma-dev.github.io/ThanksGiving/static/data/index.json", true);
     xhttp.send();
 
 }
