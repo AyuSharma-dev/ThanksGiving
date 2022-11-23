@@ -1,3 +1,147 @@
-{
-    "Name":"Ayush"
+[{
+    "name": "Abhimanyu Singh Rathore",
+    "picture": "static/images/abhimanyu.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+},{
+    "name": "Abhishek Sharma",
+    "picture": "static/images/abhishek.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+},{
+    "name": "Aditya Sing",
+    "picture": "static/images/aditya.jpg",
+    "role": "AWS Developer",
+    "comments": []
+},{
+    "name": "Amit Kalwar",
+    "picture": "static/images/amit.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Ankit Goyal",
+    "picture": "static/images/ankit.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Ankita Jangir",
+    "picture": "static/images/ankita.jpg",
+    "role": "Salesforce QA",
+    "comments": []
+}, {
+    "name": "Ashish Jangid",
+    "picture": "static/images/ashish.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Ayush Sharma",
+    "picture": "static/images/ayush.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Digvijay Singh",
+    "picture": "static/images/digvijay.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Gaurav Jeet Verma",
+    "picture": "static/images/gaurav.jpg",
+    "role": "AWS Developer",
+    "comments": []
+}, {
+    "name": "Hitesh Sharma",
+    "picture": "static/images/hitesh.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Hitesh Gupta",
+    "picture": "static/images/hiteshG.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Jyoti Chandwani",
+    "picture": "static/images/jyoti.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Kamal",
+    "picture": "static/images/kamal.jpg",
+    "role": "Salesforce Admin",
+    "comments": []
+}, {
+    "name": "Kapil Jangid",
+    "picture": "static/images/kapil.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Lakshya Chandwani",
+    "picture": "static/images/lakshya.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Madhav Sethi",
+    "picture": "static/images/madhav.jpg",
+    "role": "Salesforce Trainee",
+    "comments": []
+}, {
+    "name": "Manish Sain",
+    "picture": "static/images/manish.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Manthan Jain",
+    "picture": "static/images/manthan.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Mohit Saini",
+    "picture": "static/images/mohit.jpg",
+    "role": "Salesforce QA",
+    "comments": []
+}, {
+    "name": "Nitesh Kumawat",
+    "picture": "static/images/nitesh.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Rajani Garg",
+    "picture": "static/images/rajani.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Rohit Sharma",
+    "picture": "static/images/rohit.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Romil Gupta",
+    "picture": "static/images/romil.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Shashikant Sharma",
+    "picture": "static/images/ssharma.jpg",
+    "role": "Lead",
+    "comments": []
+}, {
+    "name": "Shilpa Bhati",
+    "picture": "static/images/shilpa.jpg",
+    "role": "Business Analyst",
+    "comments": []
+},{
+    "name": "Siddharth Sharma",
+    "picture": "static/images/sid.jpg",
+    "role": "Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Sumanpreet Bhambra",
+    "picture": "static/images/suman.jpg",
+    "role": "Sr. Salesforce Developer",
+    "comments": []
+}, {
+    "name": "Suresh Chand Mali",
+    "picture": "static/images/suresh.jpg",
+    "role": "AWS Developer",
+    "comments": []
 }
+]

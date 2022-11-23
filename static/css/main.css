@@ -1,0 +1,260 @@
+html {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.columnCustom {
+    /*float: left;*/
+    width: 80%;
+    margin-bottom: 16px;
+    padding: 0 17px;
+    display: inline-block;
+    text-align: left;
+}
+
+@media screen and (max-width: 650px) {
+    .columnCustom {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
+}
+
+.cardImage {
+    height: 51%;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5%;
+    margin-top: 20px;
+}
+
+.container {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.commentImage {
+    width: 5%;
+    border-radius: 50%;
+    margin: 5px 10px -10px 10px;
+}
+
+.container::after,
+.rowCustom::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.banner {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.bannerTitle {
+    font-size: 580%;
+    color: #003585f0;
+    opacity: 78%;
+    position: absolute;
+    top: -20%;
+    left: 1%;
+    text-shadow: 0px 0px 12px #ffffff;
+}
+
+.bannerInfo {
+    position: absolute;
+    bottom: 10%;
+    font-size: 33px;
+    width: 100%;
+    color: #003585f0;
+    ;
+    text-shadow: 0px 0px 11px white;
+}
+
+.overlay {
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff59;
+    text-align: center;
+    text-shadow: 2px 2px #ffffffa8;
+    box-shadow: inset 1px -1px 17px 7px #040404;
+    position: absolute;
+    bottom: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+
+/* CSS */
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20%;
+    float: right;
+    margin-top: 20px;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    top: 20%;
+    right: 20%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
+    position: fixed;
+    height: 500px;
+}
+
+/* Add styles to the form container */
+.form-container {
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+    padding-left: 50px;
+}
+
+.popup-container{
+    background-color: #5555557d;
+    display: none;
+    position: fixed;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: left;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container select,
+.form-container textarea,
+.form-container input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container select:focus,
+.form-container textarea:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}

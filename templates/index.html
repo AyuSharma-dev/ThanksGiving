@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="static/scripts/index.js"></script>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+
+    <div class="banner" style="background-image: url(static/images/TeamPhoto.jpg);">
+
+        <div class="overlay">
+            <p class="bannerTitle">⋆✧ 🎀 𝒜𝓅𝓅𝒮𝒶𝓋𝒾❁ 𝒯𝒽𝒶𝓃𝓀𝓈𝒢𝒾𝓋𝒾𝓃𝑔 🎀 ✧⋆</p>
+            <p class="bannerInfo">On this ThanksGiving let's Appreciate your Teammates for Teaching you Valuable lessons or Making the Workplace better.</p>
+        </div>
+    </div>
+
+    <div id="receivedData">
+
+        <br /><br />
+        <div class="rowCustom">
+            {%for teamMember in teamDetails%}
+            <div class="columnCustom" style="height: 550px;">
+                <div class="card">
+                    <div class="container">
+                        <div class="rowCustom">
+                            <div class="columnCustom" style="width: 22%;">
+                                <div class="tooltip cardImage" style="background-image:url({{teamMember.picture}});"></div>
+                                <!-- <img src={{teamMember.picture}} alt="Jane" style="width:100%"> -->
+                                <h2 style="font-size: 35px;margin-bottom: -15px;">{{teamMember.name}}</h2>
+                                <p style="font-size: 25px; font-weight: 500; font-family: inherit; color: dimgray;">{{teamMember.role}}</p>
+                                <br />
+                            </div>
+                            <div class="columnCustom" style="width: 75%;vertical-align: top; margin-top: 20px;">
+                                <div style="overflow: scroll;height:435px;overflow-x:hidden;">
+                                    <p style="font-size:20px;font-family: monospace;">{{teamMember.name}} has received {{teamMember.totalComments}} Thanks.</p>
+                                    {%for comment in teamMember.comments%}
+                                    <div>
+                                        <div class="tooltip commentImage">
+                                            <img src={{nameToPic[comment.name]}} alt="{{comment.name}}" style="width:100%; border-radius:30%;">
+                                            <span class="tooltiptext">{{comment.name}}</span>
+                                        </div>
+                                        <div style="margin: 15px 15px 15px;FONT-SIZE: 25px;">
+                                            <p>{{comment.value}}</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    {%endfor%}
+
+                                </div>
+                                <br />
+                                <!-- <a class="btn" href="#open-modal">👋 Basic CSS-Only Modal</a> -->
+                                <button id="{{teamMember.name}}" class="button-33" type="button" role="button" onclick="openForm(this)" data-toggle="modal" data-target="#exampleModalCenter">Add Comment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br />
+            {%endfor%}
+        </div>
+    </div>
+
+
+    <div id="open-modal" class="modal-window" style="display: none;">
+        ABC
+    </div>
+    <!-- Modal -->
+    <!--  -->
+
+    <div class="popup-container" id="exampleModalCenter">
+        <div class="form-popup">
+            <form action="/addComment" class="form-container">
+                <h1>Add Comment</h1>
+    
+                <input type="text" id="empName" name="empName" style="display:none">
+    
+                <label for="name" style="vertical-align: top; display: flex; flex-direction: column;"><b>Select Your Name</b></label>
+                <select name="name" id="name" required>
+                    {% for key, value in nameToPic.items() %}
+                    <option value={{key}}>{{key}}</option>
+                    {%endfor%}
+                </select>
+
+                <br/>
+    
+                <label for="comment" style="vertical-align: top; display: flex; flex-direction: column;"><b>Comment</b></label>
+                <textarea style="height: 130px;" name="comment" id="comment" required>Add your comment...</textarea>
+    
+                <br/><br/><br/>
+                <button type="submit" class="btn">Submit</button>
+                <button style="margin-left: 50px;" type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
